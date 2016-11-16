@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/Angular" libraries="{web-development/Angular/node_modules}" />
+    <file url="file://$PROJECT_DIR$/java-script" libraries="{web-development/java-script/node_modules}" />
+    <file url="file://$PROJECT_DIR$/practical-web-application" libraries="{web-development/practical-web-application/node_modules}" />
+  </component>
+</project>

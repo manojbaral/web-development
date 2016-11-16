@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!--let angular know which app to look for in angular-->
+<html ng-app="clockApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock App</title>
+
+
+    <!--Tell Angular where is angular.js directory located-->
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+
+<h1>Clock App</h1>
+
+<!--give a function to angular name that register for controller-->
+<div ng-controller="TimeCtrl">
+    Please enter your name:<input ng-model="userName" type="text"></input>
+
+    <!--Display the view-->
+    <p>The current time is :{{timeString}}</p>
+    <p>Your name is :{{userName}}</p>
+    <button ng-click="updateTime()">Update Time</button>
+</div>
+
+
+
+</body>
+</html>

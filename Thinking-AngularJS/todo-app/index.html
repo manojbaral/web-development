@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<!--ng-app to tell program this is the angular js  application-->
+<!--Angular looking for myApp controller to see if myApp is register or no-->
+<html ng-app="todoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body>
+
+<h1>Todo App</h1>
+
+<!--Define a controller-->
+<!--ToDOctrl does not exist,so we have to use ctrl as instance only-->
+<div ng-controller="TodoCtrl as ctrl">
+
+    <!--render the view-->
+
+<div>
+
+    <!--Add button for todo-list-->
+
+    <p>Add a Todo:</p>
+    <!--ng-model register the controller with its parent-->
+    <!--ng-model directive binds an input-->
+    <input type="text" ng-model="ctrl.newTodo"></div>
+    <button ng-click="ctrl.addNewTodo()">Add</button>
+
+<div>
+
+    <p>Your Todos:</p>
+    <button ng-hide="ctrl.editMode" ng-click="ctrl.triggerEditMode()">Edit</button>
+    <button ng-show="ctrl.editMode" ng-click="ctrl.triggerEditMode()">Done</button>
+
+
+
+    <ol>
+        <!--accessing ctrl.todos from array in app.js-->
+    <li ng-repeat="todo in ctrl.todos track by $index">
+
+        <!--ng-bind directive tell the angular to replace the content of an html-->
+    <span ng-hide="ctrl.editMode" ng-bind="todo"></span>
+
+        <!--ng-model directive binds an inout and render the view-->
+        <input ng-model="todo" ng-show="ctrl.editMode" type="text"></input>
+        <button ng-hide="ctrl.editMode" ng-click="ctrl.deleteTodo($index)">Delete</button>
+    </li>
+        </ol>
+</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "angular",
+  "version": "1.0.0",
+  "description": "simple static program using angular js",
+  "main": "node_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manoj Baral",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

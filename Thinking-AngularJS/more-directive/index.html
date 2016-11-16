@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="moreDirectivseApp">
+<head>
+    <meta charset="UTF-8">
+    <title>More Directive App</title>
+
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+<h1>More Directive App</h1>
+
+<div ng-controller="MoreDirectivesCtrl as ctrl">
+    <input type="checkbox" ng-model="ctrl.checked"></input>
+    <p ng-hide="ctrl.checked">Some content</p>
+
+
+
+
+</div>
+
+</body>
+</html>

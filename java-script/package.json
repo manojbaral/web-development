@@ -1,0 +1,15 @@
+{
+  "name": "java-script",
+  "version": "1.0.0",
+  "description": "simple web application",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "stream": "0.0.2",
+    "util": "^0.10.3"
+  }
+}
